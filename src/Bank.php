@@ -3,6 +3,8 @@ declare(strict_types=1);
 
 class Bank
 {
+  private $rates = array();
+  
   function reduce($source, $to)
   {
     return $source->reduce($this, $to);
@@ -10,11 +12,11 @@ class Bank
   
   function addRate($from, $to, $rate)
   {
-    
+    $this->rates[$from][$to] = $rate;
   }
   
   function rate($from, $to)
   {
-    return ($from === 'CHF' && $to === 'USD') ? 2 : 1;
+    return $this->rates[$from][$to];
   }
 }
