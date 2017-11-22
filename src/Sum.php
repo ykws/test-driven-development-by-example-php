@@ -14,6 +14,12 @@ class Sum implements Expression
     $this->addend = $addend;
   }
   
+  function times($multiplier)
+  {
+    return new Sum($this->augend->times($multiplier),
+                   $this->addend->times($multiplier));
+  }
+  
   function plus($addend)
   {
     return new Sum($this, $addend);
