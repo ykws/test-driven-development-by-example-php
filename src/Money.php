@@ -2,9 +2,8 @@
 declare(strict_types=1);
 
 require_once 'src/Expression.php';
-require_once 'src/Sum.php';
 
-class Money implements Expression
+class Money extends Expression
 {
   protected $amount;
   protected $currency;
@@ -33,11 +32,6 @@ class Money implements Expression
   function times($multiplier)
   {
     return new Money($this->amount * $multiplier, $this->currency);
-  }
-  
-  function plus($addend)
-  {
-    return new Sum($this, $addend);
   }
   
   function reduce($bank, $to)

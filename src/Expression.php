@@ -1,9 +1,15 @@
 <?php
 declare(strict_types=1);
 
-interface Expression
+require_once 'src/Sum.php';
+
+abstract class Expression
 {
-  function times($multiplier);
-  function plus($addend);
-  function reduce($bank, $to);
+  abstract function times($multiplier);
+  abstract function reduce($bank, $to);
+  
+  function plus($addend)
+  {
+    return new Sum($this, $addend);
+  }
 }

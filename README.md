@@ -4,4 +4,4 @@ written by PHP
 
 ## TODO
 
-- [ ] Generalize Expression.plus
+- [x] Generalize Expression.plus

@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 require_once 'src/Expression.php';
 
-class Sum implements Expression
+class Sum extends Expression
 {
   public $augend;
   public $addend;
@@ -18,11 +18,6 @@ class Sum implements Expression
   {
     return new Sum($this->augend->times($multiplier),
                    $this->addend->times($multiplier));
-  }
-  
-  function plus($addend)
-  {
-    return new Sum($this, $addend);
   }
   
   function reduce($bank, $to)
