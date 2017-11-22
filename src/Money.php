@@ -1,9 +1,6 @@
 <?php
 declare(strict_types=1);
 
-require_once 'src/Dollar.php';
-require_once 'src/Franc.php';
-
 class Money
 {
   protected $amount;
