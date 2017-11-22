@@ -7,4 +7,9 @@ class Bank
   {
     return $source->reduce($to);
   }
+  
+  function addRate($from, $to, $rate)
+  {
+    
+  }
 }
