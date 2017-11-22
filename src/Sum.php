@@ -14,6 +14,11 @@ class Sum implements Expression
     $this->addend = $addend;
   }
   
+  function plus($addend)
+  {
+    return null;
+  }
+  
   function reduce($bank, $to)
   {
     $amount = $this->augend->reduce($bank, $to)->amount()
