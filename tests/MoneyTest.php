@@ -9,18 +9,15 @@ final class MoneyTest extends TestCase
 {
   public function testMultiplication(): void
   {
-    $five = Money::dollar(5);
-    $this->assertEquals(Money::dollar(10), $five->times(2));
-    $this->assertEquals(Money::dollar(15), $five->times(3));
+    $this->assertEquals(Money::dollar(10), Money::dollar(5)->times(2));
+    $this->assertEquals(Money::dollar(15), Money::dollar(5)->times(3));
   }
   
   public function testEquality(): void
   {
-    $dollar = Money::dollar(5);
-    $this->assertTrue($dollar->equals(Money::dollar(5)));
-    $this->assertFalse($dollar->equals(Money::dollar(6)));
-    $franc = Money::franc(5);
-    $this->assertFalse($franc->equals($dollar));
+    $this->assertTrue(Money::dollar(5)->equals(Money::dollar(5)));
+    $this->assertFalse(Money::dollar(5)->equals(Money::dollar(6)));
+    $this->assertFalse(Money::franc(5)->equals(Money::dollar(5)));
   }
   
   public function testCurrency(): void
