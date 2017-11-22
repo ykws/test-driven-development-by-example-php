@@ -3,6 +3,9 @@ declare(strict_types=1);
 
 use PHPUnit\Framework\TestCase;
 
+require 'src/Dollar.php';
+require 'src/Franc.php';
+
 final class MoneyTest extends TestCase
 {
   public function testMultiplication(): void

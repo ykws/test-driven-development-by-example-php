@@ -13,4 +13,4 @@ written by PHP
 - [ ] hashCode()
 - [ ] equals() -> case: null
 - [ ] equals() -> case: other object
-- [ ] 5 CHF * 2 = 10 CHF
+- [x] 5 CHF * 2 = 10 CHF
