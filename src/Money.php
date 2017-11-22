@@ -7,6 +7,6 @@ class Money
   
   public function equals($object)
   {
-    return $this->amount === $object->amount;
+    return $this->amount === $object->amount && ($this instanceof $object);
   }
 }
