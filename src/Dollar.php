@@ -5,14 +5,14 @@ require_once 'src/Money.php';
 
 final class Dollar extends Money
 {
-  function __construct($amount)
+  function __construct($amount, $currency)
   {
     $this->amount = $amount;
-    $this->currency = 'USD';
+    $this->currency = $currency;
   }
   
   function times($multiplier)
   {
-    return new Dollar($this->amount * $multiplier);
+    return Money::dollar($this->amount * $multiplier);
   }
 }
