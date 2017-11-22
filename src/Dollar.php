@@ -8,11 +8,7 @@ final class Dollar extends Money
   function __construct($amount)
   {
     $this->amount = $amount;
-  }
-  
-  function currency()
-  {
-    return 'USD';
+    $this->currency = 'USD';
   }
   
   function times($multiplier)

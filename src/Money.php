@@ -7,6 +7,12 @@ require_once 'src/Franc.php';
 class Money
 {
   protected $amount;
+  protected $currency;
+  
+  function currency()
+  {
+    return $this->currency;
+  }
   
   public function equals($object)
   {
