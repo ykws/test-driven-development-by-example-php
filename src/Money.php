@@ -15,6 +15,11 @@ class Money implements Expression
     $this->currency = $currency;
   }
   
+  function amount()
+  {
+    return $this->amount;
+  }
+  
   function currency()
   {
     return $this->currency;
