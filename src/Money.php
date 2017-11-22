@@ -40,6 +40,11 @@ class Money implements Expression
     return new Sum($this, $addend);
   }
   
+  function reduce($to)
+  {
+    return $this;
+  }
+  
   static function dollar($amount)
   {
     return new Money($amount, 'USD');
