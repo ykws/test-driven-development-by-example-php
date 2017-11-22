@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once 'src/Expression.php';
+require_once 'src/Sum.php';
 
 class Money implements Expression
 {
@@ -31,7 +32,7 @@ class Money implements Expression
   
   function plus($addend)
   {
-    return new Money($this->amount + $addend->amount, $this->currency);
+    return new Sum($this, $addend);
   }
   
   static function dollar($amount)
