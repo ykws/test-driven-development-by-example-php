@@ -16,6 +16,7 @@ final class MoneyTest extends TestCase
   
   public function testEquality(): void
   {
-    $this->assertTrue(new Dollar(5).equals(new Dollar(5)));
+    $five = new Dollar(5);
+    $this->assertTrue($five->equals(new Dollar(5)));
   }
 }
