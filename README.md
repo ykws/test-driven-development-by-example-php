@@ -16,7 +16,7 @@ written by PHP
 - [x] 5 CHF * 2 = 10 CHF
 - [ ] Duplicate Dollar and Franc
 - [x] Generalize equals()
-- [ ] Generalize times()
+- [x] Generalize times()
 - [x] Compare Dollar and Franc
 - [x] Concept of currency
 - [ ] Remove testFrancMultiplication?

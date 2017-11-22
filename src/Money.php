@@ -22,16 +22,21 @@ class Money
   
   public function equals($object)
   {
-    return $this->amount === $object->amount && ($this instanceof $object);
+    return $this->amount === $object->amount && $this->currency() === $object->currency();
+  }
+  
+  function times($multiplier)
+  {
+    return new Money($this->amount * $multiplier, $this->currency);
   }
   
   static function dollar($amount)
   {
-    return new Dollar($amount, 'USD');
+    return new Money($amount, 'USD');
   }
   
   static function franc($amount)
   {
-    return new Franc($amount, 'CHF');
+    return new Money($amount, 'CHF');
   }
 }
