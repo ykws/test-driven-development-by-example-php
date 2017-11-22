@@ -27,6 +27,11 @@ class Money
     return new Money($this->amount * $multiplier, $this->currency);
   }
   
+  function plus($addend)
+  {
+    return new Money($this->amount + $addend->amount, $this->currency);
+  }
+  
   static function dollar($amount)
   {
     return new Money($amount, 'USD');
