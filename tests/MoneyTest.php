@@ -5,6 +5,7 @@ use PHPUnit\Framework\TestCase;
 
 require_once 'src/Money.php';
 require_once 'src/Bank.php';
+require_once 'src/Sum.php';
 
 final class MoneyTest extends TestCase
 {
