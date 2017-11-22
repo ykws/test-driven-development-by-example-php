@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-final class Dollar
+require_once 'src/Money.php';
+
+final class Dollar extends Money
 {
-  private $amount;
-  
   function __construct($amount)
   {
     $this->amount = $amount;
@@ -13,10 +13,5 @@ final class Dollar
   function times($multiplier)
   {
     return new Dollar($this->amount * $multiplier);
-  }
-  
-  public function equals($object)
-  {
-    return $this->amount === $object->amount;
   }
 }
