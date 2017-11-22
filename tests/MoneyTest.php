@@ -4,13 +4,15 @@ declare(strict_types=1);
 use PHPUnit\Framework\TestCase;
 
 require_once 'src/Money.php';
+require_once 'src/Bank.php';
 
 final class MoneyTest extends TestCase
 {
   public function testMultiplication(): void
   {
-    $this->assertEquals(Money::dollar(10), Money::dollar(5)->times(2));
-    $this->assertEquals(Money::dollar(15), Money::dollar(5)->times(3));
+    $five = Money::dollar(5);
+    $this->assertEquals(Money::dollar(10), $five->times(2));
+    $this->assertEquals(Money::dollar(15), $five->times(3));
   }
   
   public function testEquality(): void
@@ -31,7 +33,7 @@ final class MoneyTest extends TestCase
     $five = Money::dollar(5);
     $sum = $five->plus($five);
     $bank = new Bank();
-    $reduced = $bank->reduce(sum, 'USD');
+    $reduced = $bank->reduce($sum, 'USD');
     $this->assertEquals(Money::dollar(10), $reduced);
   }
 }

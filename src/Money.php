@@ -1,7 +1,9 @@
 <?php
 declare(strict_types=1);
 
-class Money
+require_once 'src/Expression.php';
+
+class Money implements Expression
 {
   protected $amount;
   protected $currency;
