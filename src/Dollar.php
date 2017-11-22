@@ -10,6 +10,11 @@ final class Dollar extends Money
     $this->amount = $amount;
   }
   
+  function currency()
+  {
+    return 'USD';
+  }
+  
   function times($multiplier)
   {
     return new Dollar($this->amount * $multiplier);

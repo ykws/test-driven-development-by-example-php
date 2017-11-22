@@ -10,6 +10,11 @@ final class Franc extends Money
     $this->amount = $amount;
   }
   
+  function currency()
+  {
+    return 'CHF';
+  }
+  
   function times($multiplier)
   {
     return new Franc($this->amount * $multiplier);
