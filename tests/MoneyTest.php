@@ -92,7 +92,7 @@ final class MoneyTest extends TestCase
     $bank = new Bank();
     $bank->addRate('CHF', 'USD', 2);
     $sum = new Sum($fiveBucks, $tenFrancs);
-    $sum->plus($fiveBucks);
+    $sum = $sum->plus($fiveBucks);
     $result = $bank->reduce($sum, 'USD');
     $this->assertEquals(Money::dollar(15), $result);
   }

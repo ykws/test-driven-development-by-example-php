@@ -10,5 +10,5 @@ written by PHP
 - [x] Bank.reduce(Money)
 - [x] Convert `Money`
 - [x] Reduce(Bank, String)
-- [ ] Sum.plus
+- [x] Sum.plus
 - [ ] Expression.times

@@ -16,7 +16,7 @@ class Sum implements Expression
   
   function plus($addend)
   {
-    return null;
+    return new Sum($this, $addend);
   }
   
   function reduce($bank, $to)
