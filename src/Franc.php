@@ -7,8 +7,7 @@ final class Franc extends Money
 {
   function __construct($amount, $currency)
   {
-    $this->amount = $amount;
-    $this->currency = $currency;
+    parent::__construct($amount, $currency);
   }
   
   function times($multiplier)

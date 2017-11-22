@@ -9,6 +9,12 @@ class Money
   protected $amount;
   protected $currency;
   
+  function __construct($amount, $currency)
+  {
+    $this->amount = $amount;
+    $this->currency = $currency;
+  }
+  
   function currency()
   {
     return $this->currency;
