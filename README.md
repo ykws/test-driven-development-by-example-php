@@ -14,3 +14,6 @@ written by PHP
 - [ ] equals() -> case: null
 - [ ] equals() -> case: other object
 - [x] 5 CHF * 2 = 10 CHF
+- [ ] Duplicate Dollar and Franc
+- [ ] Generalize equals()
+- [ ] Generalize times()
