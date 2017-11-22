@@ -18,3 +18,4 @@ written by PHP
 - [x] Generalize equals()
 - [ ] Generalize times()
 - [x] Compare Dollar and Franc
+- [ ] Concept of currency
