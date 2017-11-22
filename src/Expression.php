@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-require_once 'src/Sum.php';
+namespace Ykws;
 
 abstract class Expression
 {

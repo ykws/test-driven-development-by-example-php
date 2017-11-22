@@ -1,11 +1,12 @@
 <?php
 declare(strict_types=1);
 
-use PHPUnit\Framework\TestCase;
+namespace Tests;
 
-require_once 'src/Money.php';
-require_once 'src/Bank.php';
-require_once 'src/Sum.php';
+use PHPUnit\Framework\TestCase;
+use Ykws\Money;
+use Ykws\Bank;
+use Ykws\Sum;
 
 final class MoneyTest extends TestCase
 {
