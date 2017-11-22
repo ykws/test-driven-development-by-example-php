@@ -11,3 +11,5 @@ written by PHP
 - [ ] How about `Money` rounding?
 - [x] equals()
 - [ ] hashCode()
+- [ ] equals() -> case: null
+- [ ] equals() -> case: other object
