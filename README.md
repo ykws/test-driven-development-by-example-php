@@ -19,3 +19,4 @@ written by PHP
 - [ ] Generalize times()
 - [x] Compare Dollar and Franc
 - [ ] Concept of currency
+- [ ] Remove testFrancMultiplication?
