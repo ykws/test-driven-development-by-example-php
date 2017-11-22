@@ -9,3 +9,5 @@ written by PHP
 - [ ] `amount` will change private
 - [x] How about `Dollar` side effect?
 - [ ] How about `Money` rounding?
+- [ ] equals()
+- [ ] hashCode()
