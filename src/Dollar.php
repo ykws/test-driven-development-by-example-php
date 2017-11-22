@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 final class Dollar
 {
-  public $amount;
+  private $amount;
   
   function __construct($amount)
   {

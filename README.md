@@ -6,7 +6,7 @@ written by PHP
 
 - [ ] $5 + 10 CHF = $10 (case: rate is 2:1)
 - [x] $5 * 2 = $10
-- [ ] `amount` will change private
+- [x] private `amount`
 - [x] How about `Dollar` side effect?
 - [ ] How about `Money` rounding?
 - [x] equals()
