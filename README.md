@@ -17,3 +17,4 @@ written by PHP
 - [ ] Duplicate Dollar and Franc
 - [x] Generalize equals()
 - [ ] Generalize times()
+- [ ] Compare Dollar and Franc
